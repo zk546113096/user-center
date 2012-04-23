@@ -168,3 +168,24 @@ a.sidebar-link span.dd {
     text-decoration: underline;
 }
 /* }}} */
+/* {{{ index */
+.sidebar-list {
+	width: 188px;
+	margin-left: 2px;
+}
+.sidebar-list li {
+    border-bottom: 1px dotted #0b5ba5;
+    clear: both;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+}
+.sidebar-list li a {
+	color: #0b5ba5;
+	padding-left: 25px;
+	font-size: 14px;
+}
+.sidebar-list li.current {
+	background: #ffffff url('../images/s6v9bt5p.png') no-repeat 12px 8px;
+}
+/* }}} */
