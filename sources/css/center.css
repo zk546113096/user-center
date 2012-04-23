@@ -1,0 +1,170 @@
+/* {{{ register */
+.user-center {
+	background: url('../images/left.png') no-repeat left bottom;
+}
+.sidebar {
+	width: 210px;
+	height: 580px;
+	padding-top: 30px;
+	background: url('../images/left.png') no-repeat left top;
+}
+a.sidebar-link {
+    background: url("../images/left_2.png") no-repeat;
+    display: block;
+    height: 72px;
+    margin-left: 2px;
+    padding: 10px 0 0 20px;
+    width: 168px;
+}
+a.sidebar-link span {
+    color: #616C72;
+    display: block;
+}
+a.sidebar-link span.dt {
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 30px;
+}
+a.sidebar-link span.dd {
+    height: 16px;
+    line-height: 16px;
+    padding-top: 10px;
+}
+.sidebar a.current {
+    background-position: left bottom;
+		width: auto;
+}
+.sidebar a.current span {
+    color: #FFFFFF;
+}
+.rt-content {
+    background: #F8FDFF;
+    border-bottom: 1px solid #D6D9DB;
+    border-top: 1px solid #80ADD9;
+    border-right: 1px solid #D6D9DB;
+    float: left;
+		_height: 530px;
+    min-height: 530px;
+    padding-bottom: 80px;
+    width: 745px;
+}
+.register-form {
+	padding: 50px;
+}
+.register-form td {
+	padding-bottom: 15px;
+	line-height: 24px;
+	padding-left: 10px;
+}
+.register-form input {
+	width: 260px;
+
+	height: 24px;
+	line-height: 24px;
+}
+.register-form strong,
+.register-form td.error {
+	color: #ff6666;
+}
+.register-form td.error {
+	padding-left: 15px;
+	background: url('../images/error.png') no-repeat 0px 6px;
+}
+.register-form input.input-checkbox {
+	width: auto;
+	height: auto;
+	margin-top: 6px;
+	*margin-top: 2px;
+}
+.register-form .pact-link {
+	color: #4199d7;
+}
+.register-form .submit-btn {
+  background: url("../images/ipt.png") no-repeat 0 -344px;
+	border: medium none;
+	color: #FFFFFF;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 22px;
+	height: 52px;
+	text-align: center;
+	width: 183px;
+	margin-left: 180px;
+	margin-top: 40px;
+}
+.register-success {
+	padding: 50px 170px;
+}
+.register-success-info {
+	padding-left: 125px;
+	background: url('../images/success.png') no-repeat 0px 0;
+}
+.login-center-link {
+	width: 197px;
+	height: 50px;
+	display: inline-block;
+	background: url('../images/login-center.png') no-repeat;
+}
+/* }}} */
+/* {{{ login */
+.login-block {
+	height: 481px;
+	position: relative;
+	padding-bottom: 20px;
+	background: url('../images/pass_login.jpg') no-repeat;
+}
+.login_form_index {
+    height: 302px;
+    padding-left: 37px;
+    padding-top: 75px;
+    position: absolute;
+    right: 74px;
+    text-align: left;
+    top: 119px;
+    width: 379px;
+}
+.login_form_index li {
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+.login_form_index li.login_button {
+    padding-left: 76px;
+}
+.login_btn {
+    background: url("../images/login_btn_index.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 36px;
+    width: 120px;
+}
+.index_it_box, .check_text {
+    border-color: #C8C8C8 #E7E7E7 #E7E7E7 #C8C8C8;
+    border-style: solid;
+    border-width: 1px;
+    color: #666666;
+    margin-left: 10px;
+    padding: 5px 0 5px 5px;
+    width: 163px;
+}
+.check_text {
+    width: 93px;
+}
+.login_form_index li.go_reg a {
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+.forget_pw {
+    color: #666666;
+    font-size: 12px;
+    padding-left: 6px;
+    text-decoration: underline;
+}
+/* }}} */

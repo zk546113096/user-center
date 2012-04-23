@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <!-- head {{{ -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./sources/css/styles.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./sources/css/center.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <!-- }}} -->
+  <body>
+    <div id="wrapper">
+      <!-- 头部 {{{ -->
+	  <div id="header">
+      </div>
+      <!-- }}} -->
+      <!-- 内容 {{{ -->
+      <div id="content">
+				<div class="login-block">
+					<ul class="login_form_index">
+						<li>
+							<label>
+								通行证
+							</label>
+							<input type="text" value="" name="UserName" maxlength="16" id="UserName" class="index_it_box">
+						</li>
+						<li>
+							<label>
+								密&#12288;码
+							</label>
+							<input type="password" value="" name="Password" maxlength="16" id="Password" class="index_it_box">
+							<a class="forget_pw" href="/find">忘记密码？</a> 
+						</li>
+						<li>
+							<label>
+								验证码
+							</label>
+							<input type="text" value="" name="ValidateCode" maxlength="4" id="ValidateCode" class="check_text">
+							<img onclick="changeScode(this);" alt="验证码" title="点击更换图片" src="/ajax/scode" id="scode_img">
+						</li>
+						<li class="login_button">
+							<input type="submit" class="login_btn" value=" ">
+						</li>
+						<li class="go_reg">还没有绿谷通行证？ <a href="register.html">马上去注册</a>
+						</li>
+					</ul>
+				</div>
+      </div>
+      <!-- }}} -->
+      <!-- 尾部 {{{ -->
+      <div id="footer">
+				<p class="pt30 tac lh24">
+					copyright &copy; 2011 - 2012 xxxx . All Rights Reserved<br> 
+					XX公司 
+					<a href="#" 
+					target="_blank" class="clink">版权所有</a>
+				</p>
+      </div>
+      <!-- }}} -->
+    </div>
+  </body>
+</html>
