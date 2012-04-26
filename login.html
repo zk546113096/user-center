@@ -3,9 +3,9 @@
   <!-- head {{{ -->
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Login</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="./sources/css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="./sources/css/styles.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="./sources/css/center.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <!-- }}} -->
   <body>
@@ -17,33 +17,49 @@
       <!-- 内容 {{{ -->
       <div id="content">
 				<div class="login-block">
-					<ul class="login_form_index">
-						<li>
-							<label>
-								通行证
+					<form class="form-horizontal register-form" action="register-form" method="get" accept-charset="utf-8">
+						<div class="control-group">
+							<label class="control-label">
+								通行证：
 							</label>
-							<input type="text" value="" name="UserName" maxlength="16" id="UserName" class="index_it_box">
-						</li>
-						<li>
-							<label>
-								密&#12288;码
+							<div class="controls">
+								<input type="text" class="span3" id="input01">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">
+								密码：
 							</label>
-							<input type="password" value="" name="Password" maxlength="16" id="Password" class="index_it_box">
-							<a class="forget_pw" href="/find">忘记密码？</a> 
-						</li>
-						<li>
-							<label>
-								验证码
+							<div class="controls">
+								<input type="password" class="span3" id="input02">
+								<span class="help-inline">
+									<a class="color-ffc800" href="/find">忘记密码？</a> 
+								</span>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">
+								验证码：
 							</label>
-							<input type="text" value="" name="ValidateCode" maxlength="4" id="ValidateCode" class="check_text">
-							<img onclick="changeScode(this);" alt="验证码" title="点击更换图片" src="/ajax/scode" id="scode_img">
-						</li>
-						<li class="login_button">
-							<input type="submit" class="login_btn" value=" ">
-						</li>
-						<li class="go_reg">还没有绿谷通行证？ <a href="register.html">马上去注册</a>
-						</li>
-					</ul>
+							<div class="controls">
+								<input type="text" name="ValidateCode" maxlength="4" id="ValidateCode" class="span2 check_text">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">
+							</label>
+							<div class="controls">
+								<button class="btn btn-primary" type="submit">登录</button>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">
+							</label>
+							<div class="controls">
+								还没有绿谷通行证？ <a class="color-ffc800" href="register.html">马上去注册</a>
+							</div>
+						</div>
+					</form>
 				</div>
       </div>
       <!-- }}} -->
