@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <!-- head {{{ -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="./sources/css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./sources/css/jquery-ui.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./sources/css/styles.css" type="text/css" media="screen" charset="utf-8">
+		<script type="text/javascript" src="./sources/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="./sources/js/jquery-ui.min.js"></script>
+  </head>
+  <!-- }}} -->
+  <body>
+    <div id="wrapper">
+      <!-- 头部 {{{ -->
+	  <div id="header">
+      </div>
+      <!-- }}} -->
+      <!-- 内容 {{{ -->
+      <div id="content">
+				<div class="user-center clearfix">
+					<div class="lf sidebar">
+						<ul class="sidebar-list">
+							<li>
+								<a href="index.html">
+									个人中心	
+								</a>	
+							</li>	
+							<li>
+								<a href="data-update.html">
+									资料修改
+								</a>	
+							</li>	
+							<li>
+								<a href="password.html">
+									密码修改
+								</a>	
+							</li>	
+							<li>
+								<a href="mb-password.html">
+									密保设置
+								</a>	
+							</li>	
+							<li>
+								<a href="addicted.html">
+									防沉迷系统
+								</a>	
+							</li>	
+							<li>
+								<a href="game-manage.html">
+									游戏管理
+								</a>	
+							</li>	
+							<li class="current">
+								<a href="balance.html">
+									查询余额
+								</a>	
+							</li>	
+							<li>
+								<a href="details.html">
+									查询明细
+								</a>	
+							</li>	
+							<li>
+								<a href="reg-pect.html">
+									注册协议
+								</a>	
+							</li>	
+							<li>
+								<a href="index.html">
+									退出登录
+								</a>	
+							</li>	
+						</ul>
+					</div>	
+					<div class="rt rt-content pl">
+						<div class="mt50 ml50 clearfix">
+							<h3>我的账户余额</h3>
+							<table width="100%">
+								<tr>
+									<td width="50%">
+										余额：<span class="color-ffc800 fwb">0.0</span>币
+									</td>	
+									<td>
+										<a href="javascript: void(0);" class="btn balance-link">账户充值</a>	
+									</td>	
+								</tr>	
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+      <!-- }}} -->
+      <!-- 尾部 {{{ -->
+      <div id="footer">
+				<p class="pt30 tac lh24">
+					copyright &copy; 2011 - 2012 xxxx . All Rights Reserved<br> 
+					XX公司 
+					<a href="#" 
+					target="_blank" class="clink">版权所有</a>
+				</p>
+      </div>
+      <!-- }}} -->
+		<div id="balance-dialog" title="basic dialog">
+				<form action="">
+					<p class="clearfix mt20">
+						<label class="lf lh22">输入金额：</label><input class="lf" type="test" />	
+					</p>	
+					<div class="clearfix mt20">
+						<label class="lf lh22">充值方式：</label>
+						<div class="lf">
+							<p class="clearfix">
+								<input class="lf balance-radio" type="radio" name="pay_mode">
+								<label class="ml10 lf">
+									<img src="http://imgcache.qq.com/bossweb/pay/image_page/quick.png">
+								</label>
+								<span class="lf ml10">
+									(推荐93折)
+								</span>
+								<span class="lf">
+									无需登录网银或财付通轻松完成付款
+								</span> 
+							</p>
+							<p class="clearfix">
+								<input class="lf balance-radio" type="radio" checked="checked" name="pay_mode">
+								<label class="lf ml10">
+									支付宝	
+									<span>(<span class="key_ora">91折</span>)
+										<i class="sign_caibei"><span>可用彩贝积分抵扣</span></i>
+									</span>
+								</label>
+							</p>
+							<p class="clearfix">
+								<input class="lf balance-radio" type="radio" name="pay_mode">
+								<label class="ml10 lf">
+										银行卡<span id="d_bank">(93折)</span>
+								</label>
+							</p>
+						</div>
+					</div>	
+					<p class="mt20 tac">
+						<input type="submit" class="btn btn-primary balance-submit" value="立即充值" />	
+					</p>
+				</form>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.balance-link').click(function() {
+					$('#balance-dialog').dialog({
+						title : '充值',
+						width : 500
+
+					});
+					return false;
+				});
+			});
+		</script>
+  </body>
+</html>

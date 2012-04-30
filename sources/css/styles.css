@@ -244,6 +244,9 @@ a:hover {
 .color-red { 
 	color: red;
 }
+.color-cccccc {
+	color: #cccccc;
+}
 /* background color */
 .bkff {
 	background: #ffffff;
@@ -549,4 +552,50 @@ a.sidebar-link span.dd {
 	padding: 20px 50px;
 }
 /* }}} */
-
+/* balance {{{ */
+.ui-widget-header .ui-icon {
+    background-image: url("../images/ui-icons_222222_256x240.png");
+}
+input.balance-radio {
+	width: auto;
+	height: auto;
+}
+input.details-submit {
+	width: auto;
+}
+input.balance-submit {
+	width: auto;
+}
+/* }}} */
+/* details {{{ */
+#details-tabs {
+	width: 650px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.details-content .ui-widget-header,
+.details-content .ui-widget-content {
+	border: 0;
+	background: none;
+}
+.details-content .ui-state-default {
+	background: #ffffff;
+}
+.details-content .ui-state-active {
+	background: #deeaf6;
+}
+.details-type a {
+	color: #0b5ba5;
+}
+.details-table td,
+.details-table th {
+	line-height: 25px;
+	text-align: center;
+}
+.details-table th {
+	background: #deeaf6;
+}
+.details-line {
+	border-top: #cccccc 1px solid;
+}
+/* }}} */

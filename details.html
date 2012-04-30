@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <!-- head {{{ -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="./sources/css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./sources/css/jquery-ui.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./sources/css/styles.css" type="text/css" media="screen" charset="utf-8">
+		<script type="text/javascript" src="./sources/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="./sources/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./sources/js/jquery-ui-core.js"></script>
+		<script type="text/javascript" src="./sources/js/jquery-ui-datepicker.js"></script>
+  </head>
+  <!-- }}} -->
+  <body>
+    <div id="wrapper">
+      <!-- 头部 {{{ -->
+	  <div id="header">
+      </div>
+      <!-- }}} -->
+      <!-- 内容 {{{ -->
+      <div id="content">
+				<div class="user-center clearfix">
+					<div class="lf sidebar">
+						<ul class="sidebar-list">
+							<li>
+								<a href="index.html">
+									个人中心	
+								</a>	
+							</li>	
+							<li>
+								<a href="data-update.html">
+									资料修改
+								</a>	
+							</li>	
+							<li>
+								<a href="password.html">
+									密码修改
+								</a>	
+							</li>	
+							<li>
+								<a href="mb-password.html">
+									密保设置
+								</a>	
+							</li>	
+							<li>
+								<a href="addicted.html">
+									防沉迷系统
+								</a>	
+							</li>	
+							<li>
+								<a href="game-manage.html">
+									游戏管理
+								</a>	
+							</li>	
+							<li>
+								<a href="balance.html">
+									查询余额
+								</a>	
+							</li>	
+							<li class="current">
+								<a href="details.html">
+									查询明细
+								</a>	
+							</li>	
+							<li>
+								<a href="reg-pect.html">
+									注册协议
+								</a>	
+							</li>	
+							<li>
+								<a href="index.html">
+									退出登录
+								</a>	
+							</li>	
+						</ul>
+					</div>	
+					<div class="rt rt-content details-content pl">
+						<div id="details-tabs">
+							<ul>
+								<li><a href="#tabs-1">交易明细</a></li>
+								<li><a href="#tabs-2">其他方式交易明细</a></li>
+							</ul>
+							<div id="tabs-1">
+								<form action="">
+									<table width="100%">
+										<tr>
+											<td width="15%">
+												查询日期：	
+											</td>
+											<td>
+											 <input type="text" class="span2" id="datepicker">
+											 至
+											 <input type="text" class="span2" id="datepicker2">
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td>
+												<input type="submit" class="btn btn-primary details-submit" value="查询" />
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<div id="tabs-2">
+								<p class="lh22 details-type">
+									<a href="#">全部</a>	
+									|
+									<a href="#">支付宝</a>	
+									|
+									<a href="#">银行卡</a>	
+								</p>	
+								<p class="lh22">
+									您在<span class="color-ffc800 fwb">2011-10-20</span>至	
+									<span class="color-ffc800 fwb">2012-04-20</span>
+									<span class="ml10">
+										其他渠道交易明细如下：	
+									</span>
+								</p>
+								<table class="details-table" width="100%">
+									<tr>
+										<th width="30%">日期</th>
+										<th width="20%">交易方式</th>
+										<th width="20%">交易金额</th>
+										<th>信息摘要</th>
+									</tr>
+									<tr>
+										<td>2012-02-22 23:45:28</td>
+										<td>网银支付宝</td>
+										<td>109.30元</td>
+										<td>通过网银支付宝 945454，
+										</td>
+									</tr>
+								</table>
+								<p class="details-line tar lh22">
+									共1条记录	
+								</p>
+							</div>
+							<div class="color-cccccc">
+								<p class="lh22 color-00ff00">
+									温馨提示	
+								</p>
+								<p class="lh22">
+									支付宝/银行卡只能展示您3天之前的交易记录，同时只为您保存最近3个月的记录	
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      <!-- }}} -->
+      <!-- 尾部 {{{ -->
+      <div id="footer">
+				<p class="pt30 tac lh24">
+					copyright &copy; 2011 - 2012 xxxx . All Rights Reserved<br> 
+					XX公司 
+					<a href="#" 
+					target="_blank" class="clink">版权所有</a>
+				</p>
+      </div>
+      <!-- }}} -->
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#details-tabs").tabs();
+				$("#datepicker").datepicker({
+					showOn: "button",
+					buttonImage: "./sources/images/calendar.gif",
+					buttonImageOnly: true
+				});
+				$("#datepicker2").datepicker({
+					showOn: "button",
+					buttonImage: "./sources/images/calendar.gif",
+					buttonImageOnly: true
+				});
+			});
+		</script>
+  </body>
+</html>
