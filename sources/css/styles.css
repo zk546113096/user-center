@@ -1,6 +1,5 @@
 /* base style {{{ */
 body {
-  background: url("../images/body.png") repeat-x;
   color: #666666;
   font: 12px/1.35 "微软雅黑",Arial,Helvetica,sans-serif;
 }
@@ -30,6 +29,13 @@ a:hover {
 #wrapper {
 	width: 956px;
 	margin: 0 auto;
+}
+#header {
+	color: #0b5ba5;
+	padding: 10px 20px;
+}
+#header a {
+	color: #0b5ba5;
 }
 /* }}} */
 /* css class {{{ */
